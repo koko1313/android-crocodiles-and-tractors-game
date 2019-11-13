@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/moreButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/more_icon" />
+
+        <ImageButton
+            android:id="@+id/startGameButton"
+            android:layout_width="250dp"
+            android:layout_height="139dp"
+            android:layout_below="@+id/moreButton"
+            android:layout_margin="10dp"
+            android:background="@drawable/start_game_button"/>
+
+        <LinearLayout
+            android:id="@+id/mainMenuFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moreButton"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible">
+
+            <fragment
+                android:name="com.example.koko13.crocodilesandtractors.MainMenuFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_main_menu" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

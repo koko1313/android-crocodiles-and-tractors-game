@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@drawable/background_playground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Playground-а -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <!-- grid-а -->
+        <LinearLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:background="#000"
+            android:gravity="center_vertical">
+
+            <!-- gridRow1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <!-- r1c1 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r1c2 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r1c3 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r1c4 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r1c5 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r1c6 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r1c7 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- gridRow2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_weight="1">
+
+                <!-- r2c1 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r2c2 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r2c3 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r2c4 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r2c5 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r2c6 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r2c7 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- gridRow3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_weight="1">
+
+                <!-- r3c1 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r3c2 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r3c3 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r3c4 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r3c5 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r3c6 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r3c7 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- gridRow4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_weight="1">
+
+                <!-- r4c1 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r4c2 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r4c3 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r4c4 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r4c5 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r4c6 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <!-- r4c7 -->
+                <RelativeLayout
+                    android:tag="gridCell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:tag="button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                    <ImageView
+                        android:tag="symbolImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:elevation="10dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ready бутона -->
+        <Button
+            android:id="@+id/gridReadyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid"
+            android:layout_alignParentRight="true"
+            android:text="Готово"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <!-- Color Picker-а -->
+    <LinearLayout
+        android:id="@+id/colorPicker"
+        android:tag="colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:tag="colorPickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:tag="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#cf0101"/>
+
+            <Button
+                android:tag="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#15ff00" />
+
+            <Button
+                android:tag="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#ffa600" />
+
+            <Button
+                android:tag="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#0400ff" />
+
+            <Button
+                android:tag="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#7d5303" />
+
+            <Button
+                android:tag="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#00fff7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="colorPickerRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:tag="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#ffee00" />
+
+            <Button
+                android:tag="8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#bb00cc" />
+
+            <Button
+                android:tag="9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#ff00ff" />
+
+            <Button
+                android:tag="10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#408e29" />
+
+            <Button
+                android:tag="11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#040404" />
+
+            <Button
+                android:tag="0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/empty_cell" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
